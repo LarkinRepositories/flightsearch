@@ -5,7 +5,7 @@ import lombok.Data;
 
 import java.time.LocalDate;
 @Data
-public class SubScriptionCreateDto {
+public class SubscriptionCreateDto {
     @JsonProperty("Email")
     private String email;
     @JsonProperty("Country")

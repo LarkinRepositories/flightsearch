@@ -4,8 +4,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import java.time.LocalDate;
+
 @Data
-public class SubScriptionUpdateDto {
+public class SubscriptionDto {
+    @JsonProperty("Id")
+    private Long id;
     @JsonProperty("Email")
     private String email;
     @JsonProperty("Country")
@@ -24,4 +27,6 @@ public class SubScriptionUpdateDto {
     private LocalDate outboundPartialDate;
     @JsonProperty("InboundPartialDate")
     private LocalDate inboundPartialDate;
+    @JsonProperty("MinPrice")
+    private Integer minPrice;
 }
